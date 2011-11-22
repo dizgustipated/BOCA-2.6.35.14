@@ -171,17 +171,6 @@ config CPU_FREQ_DEFAULT_GOV_INTERACTIVEX
 	  loading your cpufreq low-level hardware driver, using the
 	  'interactiveX' governor for latency-sensitive workloads.
 
-config CPU_FREQ_DEFAULT_GOV_MINMAX
-	bool "minmax"
-	select CPU_FREQ_GOV_MINMAX
-	select CPU_FREQ_GOV_PERFORMANCE
-	help
-	  Use the CPUFreq governor 'minmax' as default. This minimizes the
-	  frequency jumps does by the governor. This is aimed at maximizing
-	  both perfomance and battery life.
-
-
-
 config CPU_FREQ_DEFAULT_GOV_SMARTASS2
 	bool "smartass"
 	select CPU_FREQ_GOV_SMARTASS2
@@ -194,13 +183,6 @@ config CPU_FREQ_DEFAULT_GOV_SCARY
 	select CPU_FREQ_GOV_SCARY
 	help
 		Use the CPUFreq governor 'scary' as default.
-
-config CPU_FREQ_DEFAULT_GOV_SUPERBAD
-	bool "superbad"
-	select CPU_FREQ_GOV_SUPERBAD
-	select CPU_FREQ_GOV_PERFORMANCE
-	help
-	  Use the CPUFreq governor 'superbad' as default.
 
 config CPU_FREQ_DEFAULT_GOV_LAGFREE
   bool "lagfree"
@@ -335,24 +317,6 @@ config CPU_FREQ_GOV_INTERACTIVEX
 	tristate "'interactiveX' cpufreq policy governor"
 	help
 	  'interactiveX' - Modified version of interactive with sleep+wake code.
-
-config CPU_FREQ_GOV_MINMAX
-	tristate "'minmax' cpufreq governor"
-	depends on CPU_FREQ
-	help
-	  'minmax' - this driver tries to minimize the frequency jumps by limiting
-	  the the selected frequencies to either the min or the max frequency of
-	  the policy. The frequency is selected according to the load.
-
-	  If in doubt, say N.
-
-config CPU_FREQ_GOV_SUPERBAD
-	tristate "'superbad' cpufreq governor"
-	depends on CPU_FREQ
-	help
-	  'superbad' - a "superbad" super smooth rendition of a highly optimized "smartass" governor!
-
-	  If in doubt, say N.
 
 config CPU_FREQ_GOV_SMARTASS2
         tristate "'smartassV2' cpufreq governor"

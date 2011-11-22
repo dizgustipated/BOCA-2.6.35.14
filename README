@@ -2,6 +2,8 @@
 kernel features include:
 
 kernel features
+deconfigs made for P1000 & P1000l/n
+
 *TINY_SHMEM FILE SYSTEM enabled 
 *LCD Voltage down to 260000 from 300000 
 *Touchscreen Driver Tweaks 
@@ -11,7 +13,7 @@ kernel features
 *voodoo sound v10 
 *patched up to 2.6.35.13 (from 2.6.35.7) 
 *Minimal Undervolt Settings 
-*new recovery (made by Humbros - 'pimped out by diz'
+*new recovery (made by Humbros - 'pimped out by diz' - 'pimping' taken out (just for this test)
 *large market downloads 
 obj-$(CONFIG_CPU_FREQ_GOV_PERFORMANCE)	    += cpufreq_performance.o
 obj-$(CONFIG_CPU_FREQ_GOV_POWERSAVE)	    += cpufreq_powersave.o
@@ -26,7 +28,6 @@ obj-$(CONFIG_CPU_FREQ_GOV_INTERACTIVEX)     += cpufreq_interactivex.o
 obj-$(CONFIG_CPU_FREQ_GOV_MINMAX)	    += cpufreq_minmax.o
 obj-$(CONFIG_CPU_FREQ_GOV_SMARTASS2)	    += cpufreq_smartass2.o
 obj-$(CONFIG_CPU_FREQ_GOV_SCARY)	    += cpufreq_scary.o
-obj-$(CONFIG_CPU_FREQ_GOV_SUPERBAD)	    += cpufreq_superbad.o
 obj-$(CONFIG_CPU_FREQ_GOV_LAGFREE)	    += cpufreq_lagfree.o
 obj-$(CONFIG_CPU_FREQ_GOV_DARKSIDE)	    += cpufreq_darkside.o
 obj-$(CONFIG_CPU_FREQ_GOV_INTERACTIVE)      += cpufreq_interactive.o
