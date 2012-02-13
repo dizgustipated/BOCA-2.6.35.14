@@ -1,0 +1,1 @@
+cmd_drivers/sensor/built-in.o :=  /opt/toolchains/arm-2009q3/bin/arm-none-eabi-ld -EL    -r -o drivers/sensor/built-in.o drivers/sensor/accel/built-in.o drivers/sensor/compass/built-in.o drivers/sensor/gyro/built-in.o drivers/sensor/light/built-in.o 

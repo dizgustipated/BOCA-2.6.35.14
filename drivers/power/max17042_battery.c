@@ -26,6 +26,9 @@
 #include <linux/interrupt.h>
 #include <linux/rtc.h>
 
+#ifdef CONFIG_BLX
+#include <linux/blx.h>
+#endif
 
 #define MAX17042
 
@@ -1718,7 +1721,8 @@ int max17042_test_mode_request(
 		return -1;
 	}
 
-	printk("%s: test_mode(%d)\n", __func__, (int)mode);
+	printk(
+"%s: test_mode(%d)\n", __func__, (int)mode);
 
 	switch (mode) {
 	case TEST_MODE_FUEL_GAUGE_CHECK:
@@ -1814,6 +1818,13 @@ static void max17042_get_status(struct i2c_client *client)
 	} else {
 		chip->status = POWER_SUPPLY_STATUS_DISCHARGING;
 	}
+
+#ifdef CONFIG_BLX
+  if (chip->soc >= get_charginglimit())
+#else	
+   if (chip->soc > MAX17042_BATTERY_FULL)
+#endif	
+     chip->status = POWER_SUPPLY_STATUS_FULL;
 
 //	if (chip->soc > MAX17042_BATTERY_FULL)
 //		chip->status = POWER_SUPPLY_STATUS_FULL;

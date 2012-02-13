@@ -1,0 +1,1 @@
+cmd_drivers/misc/samsung_modemctl/svnet/svnet.o := /opt/toolchains/arm-2009q3/bin/arm-none-eabi-ld -EL    -r -o drivers/misc/samsung_modemctl/svnet/svnet.o drivers/misc/samsung_modemctl/svnet/main.o drivers/misc/samsung_modemctl/svnet/pdp.o drivers/misc/samsung_modemctl/svnet/sipc4.o 

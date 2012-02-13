@@ -1,0 +1,1 @@
+cmd_drivers/misc/samsung_modemctl/built-in.o :=  /opt/toolchains/arm-2009q3/bin/arm-none-eabi-ld -EL    -r -o drivers/misc/samsung_modemctl/built-in.o drivers/misc/samsung_modemctl/modemctl/built-in.o drivers/misc/samsung_modemctl/onedram/built-in.o drivers/misc/samsung_modemctl/svnet/built-in.o 

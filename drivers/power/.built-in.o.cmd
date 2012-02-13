@@ -1,0 +1,1 @@
+cmd_drivers/power/built-in.o :=  /opt/toolchains/arm-2009q3/bin/arm-none-eabi-ld -EL    -r -o drivers/power/built-in.o drivers/power/power_supply.o drivers/power/max17042_battery.o drivers/power/smb136_charger.o drivers/power/sec_battery.o drivers/power/max8998_charger.o 
