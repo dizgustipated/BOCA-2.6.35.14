@@ -1,4 +1,3 @@
-
 kernel features include:
 
 kernel features
@@ -45,6 +44,12 @@ obj-$(CONFIG_CPU_FREQ_GOV_INTERACTIVE)      += cpufreq_interactive.o
 *very flexable undervolting
 *lower tab temperature
 *"trickle charge" (VERY SLOWELY) in car
+*Add NTFS support
+*Battery Life eXtender (BLX)
+(http://forum.xda-developers.com/showthread.php?t=1257497)
+*updated wifi scan
+*kernel profiling and sha digest
+
 
 
 Linux kernel release 2.6.xx <http://kernel.org/>
@@ -421,4 +426,3 @@ IF SOMETHING GOES WRONG:
 
    gdb'ing a non-running kernel currently fails because gdb (wrongly)
    disregards the starting offset for which the kernel is compiled.
-
