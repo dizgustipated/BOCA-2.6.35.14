@@ -19,6 +19,7 @@ obj-$(CONFIG_CPU_FREQ_GOV_SCARY)	    += cpufreq_scary.o
 obj-$(CONFIG_CPU_FREQ_GOV_LAGFREE)	    += cpufreq_lagfree.o
 obj-$(CONFIG_CPU_FREQ_GOV_DARKSIDE)	    += cpufreq_darkside.o
 obj-$(CONFIG_CPU_FREQ_GOV_INTERACTIVE)      += cpufreq_interactive.o
+obj-$(CONFIG_CPU_FREQ_GOV_LULZACTIVE)	   += cpufreq_lulzactive.o
 
 # CPUfreq cross-arch helpers
 obj-$(CONFIG_CPU_FREQ_TABLE)		+= freq_table.o

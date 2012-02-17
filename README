@@ -9,28 +9,51 @@ deconfigs made for P1000 & P1000l/n
 *Touchscreen Driver Tweaks 
 *10 point touch
 *OC/UV 600mhz, 1.2 & 1.4ghz added
+kernel features include:
+
+" SIO, VR, INTERACTIVEX, SAVEDZEN, GREASEDLIGHTNING, DARKSIDE, ONDEMANDX, SCARY, SMARTASSV2, SUPERBAD"
+Ported to AOSP/CyanogenMod SGT7 originally by me.
+
+
+deconfigs made for P1000 & P1000L & P1000N included
+
+*TINY_SHMEM FILE SYSTEM enabled 
+*LCD Voltage down to 260000 from 300000 
+*Touchscreen Driver Tweaks 
+*10 point touch
+*OC/UV 600mhz, 1.2 & 1.4ghz added
 *Set at 1000mhz stock 
 *voodoo sound v10 
 *patched up to 2.6.35.13 (from 2.6.35.7) 
 *Minimal Undervolt Settings 
-*new recovery (made by Humbros - 'pimped out by diz' - 'pimping' taken out (just for this test)
+*new recovery (Based off of Overcome Recovery - adapted by Humbertos
 *large market downloads 
-obj-$(CONFIG_CPU_FREQ_GOV_PERFORMANCE)	    += cpufreq_performance.o
-obj-$(CONFIG_CPU_FREQ_GOV_POWERSAVE)	    += cpufreq_powersave.o
-obj-$(CONFIG_CPU_FREQ_GOV_USERSPACE)	    += cpufreq_userspace.o
-obj-$(CONFIG_CPU_FREQ_GOV_ONDEMANDX)	    += cpufreq_ondemandx.o
-obj-$(CONFIG_CPU_FREQ_GOV_ONDEMAND)	    += cpufreq_ondemand.o
-obj-$(CONFIG_CPU_FREQ_GOV_CONSERVATIVE)	    += cpufreq_conservative.o
-obj-$(CONFIG_CPU_FREQ_GOV_SMOOTHASS)        += cpufreq_smoothass.o
-obj-$(CONFIG_CPU_FREQ_GOV_GREASELIGHTNING)  += cpufreq_greaselightning.o
-obj-$(CONFIG_CPU_FREQ_GOV_SAVAGEDZEN)       += cpufreq_savagedzen.o
-obj-$(CONFIG_CPU_FREQ_GOV_INTERACTIVEX)     += cpufreq_interactivex.o
-obj-$(CONFIG_CPU_FREQ_GOV_MINMAX)	    += cpufreq_minmax.o
-obj-$(CONFIG_CPU_FREQ_GOV_SMARTASS2)	    += cpufreq_smartass2.o
-obj-$(CONFIG_CPU_FREQ_GOV_SCARY)	    += cpufreq_scary.o
-obj-$(CONFIG_CPU_FREQ_GOV_LAGFREE)	    += cpufreq_lagfree.o
-obj-$(CONFIG_CPU_FREQ_GOV_DARKSIDE)	    += cpufreq_darkside.o
-obj-$(CONFIG_CPU_FREQ_GOV_INTERACTIVE)      += cpufreq_interactive.o
+
+CPU Govenors
+--------------------
+
+performance
+powersave
+userspace
+ondemandx
+ondemand
+conservative
+smoothass
+greaselightning
+savagedzen
+interactivex
+cpufreq_minmax
+smartass2
+scary
+lagfree
+darkside
+interactive
+LULZACTIVE - ported from:http://forum.xda-developers.com/show....php?t=1460327 - thanks af974!
+(use recomended (lulzactive located here:https://market.android.com/details?id=com.tegrak.lulzactive)
+
+I/O Schedulers
+
+--------------------
 *Fifo I/O Scheduler
 *NOOP I/O Scheduler 
 *CFQ I/O Scheduler
@@ -38,6 +61,10 @@ obj-$(CONFIG_CPU_FREQ_GOV_INTERACTIVE)      += cpufreq_interactive.o
 *V/R I/O Scheduler 
 *SIO I/O Scheduler
 *BFQ-v2 I/O Scheduler
+
+NEW Features
+---------------------
+
 *AutoGroup Shed 
 *CONFIG_NETFILTER_XT_TARGET_LED 
 *video record has returned once again. - thanks jt1134
@@ -45,7 +72,15 @@ obj-$(CONFIG_CPU_FREQ_GOV_INTERACTIVE)      += cpufreq_interactive.o
 *very flexable undervolting
 *lower tab temperature
 *"trickle charge" (VERY SLOWELY) in car
+*Add NTFS support
+*Battery Life eXtender (BLX)
+(http://forum.xda-developers.com/showthread.php?t=1257497)
+*updated wifi scan
+*kernel profiling and sha digest
 
+--------------------------------------------
+============================================
+--------------------------------------------
 
 Linux kernel release 2.6.xx <http://kernel.org/>
 
