@@ -1,8 +1,10 @@
-
 kernel features include:
 
-kernel features
-deconfigs made for P1000 & P1000l/n
+" SIO, VR, INTERACTIVEX, SAVEDZEN, GREASEDLIGHTNING, DARKSIDE, ONDEMANDX, SCARY, SMARTASSV2, SUPERBAD"
+Ported to AOSP/CyanogenMod SGT7 originally by me.
+
+
+deconfigs made for P1000 & P1000L & P1000N included
 
 *TINY_SHMEM FILE SYSTEM enabled 
 *LCD Voltage down to 260000 from 300000 
@@ -48,8 +50,11 @@ scary
 lagfree
 darkside
 interactive
+<<<<<<< HEAD
 LULZACTIVE - ported from:http://forum.xda-developers.com/show....php?t=1460327 - thanks af974!
 (use recomended (lulzactive located here:https://market.android.com/details?id=com.tegrak.lulzactive)
+=======
+>>>>>>> 7a6cece22c17690e2fafc3bed8b0bbb7bb53c7ba
 
 I/O Schedulers
 
@@ -78,9 +83,13 @@ NEW Features
 *updated wifi scan
 *kernel profiling and sha digest
 
+<<<<<<< HEAD
 --------------------------------------------
 ============================================
 --------------------------------------------
+=======
+---------------------------------------------------------------------------------------
+>>>>>>> 7a6cece22c17690e2fafc3bed8b0bbb7bb53c7ba
 
 Linux kernel release 2.6.xx <http://kernel.org/>
 
@@ -456,4 +465,3 @@ IF SOMETHING GOES WRONG:
 
    gdb'ing a non-running kernel currently fails because gdb (wrongly)
    disregards the starting offset for which the kernel is compiled.
-
