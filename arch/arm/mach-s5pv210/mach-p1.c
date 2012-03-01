@@ -359,7 +359,7 @@ static struct s3cfb_lcd lvds = {
 		.p_width = 154,
 		.p_height = 90,
 		.bpp = 24,
-        .freq = 60,
+        .freq = 68,
 
         .timing = {
 #if defined(CONFIG_MACH_P1_GSM) || defined(CONFIG_MACH_P1_LTN)
@@ -732,8 +732,8 @@ static struct regulator_init_data crespo_ldo16_data = {
 static struct regulator_init_data crespo_ldo17_data = {
 	.constraints	= {
 		.name		= "LVDS_VDD3.3V",
-		.min_uV		= 2600000,
-		.max_uV		= 2600000,
+		.min_uV		= 2550000,
+		.max_uV		= 2550000,
 		.apply_uV	= 1,
 		.boot_on	= 1,
 		.valid_ops_mask = REGULATOR_CHANGE_VOLTAGE |
