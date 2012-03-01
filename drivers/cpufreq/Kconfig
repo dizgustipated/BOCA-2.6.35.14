@@ -124,6 +124,26 @@ config CPU_FREQ_DEFAULT_GOV_ONDEMAND
 	  governor. If unsure have a look at the help section of the
 	  driver. Fallback governor will be the performance governor.
 
+config CPU_FREQ_DEFAULT_GOV_WHEATLEY
+  bool "wheatley"
+  select CPU_FREQ_GOV_WHEATLEY
+  select CPU_FREQ_GOV_PERFORMANCE
+  help	
+    Use the CPUFreq governor 'wheatley' as default.
+
+config CPU_FREQ_DEFAULT_GOV_LIONHEART
+    bool "lionheart"
+    select CPU_FREQ_GOV_LIONHEART
+    help
+        Use the CPUFreq governor 'lionheart' as default.
+
+config CPU_FREQ_DEFAULT_GOV_INTELLIDEMAND
+	bool "intellidemand"
+	select CPU_FREQ_GOV_INTELLIDEMAND
+	select CPU_FREQ_GOV_PERFORMANCE
+	help
+	  Intelligent OnDemand Govneror based on Samsung Patched OnDemand
+
 config CPU_FREQ_DEFAULT_GOV_CONSERVATIVE
 	bool "conservative"
 	select CPU_FREQ_GOV_CONSERVATIVE
@@ -302,6 +322,20 @@ config CPU_FREQ_GOV_ONDEMAND
 	  For details, take a look at linux/Documentation/cpu-freq.
 
 	  If in doubt, say N.
+
+config CPU_FREQ_GOV_LIONHEART
+	tristate "'lionheart' cpufreq governor"
+	depends on CPU_FREQ
+
+config CPU_FREQ_GOV_WHEATLEY
+  tristate "'wheatley' cpufreq governor"
+  depends on CPU_FREQ
+
+config CPU_FREQ_GOV_INTELLIDEMAND
+	tristate "'intellidemand' cpufreq governor"
+	depends on CPU_FREQ
+	help
+	  'intellidemand' - an intelligent ondemand governor
 
 config CPU_FREQ_GOV_SMOOTHASS
     tristate "'smoothass' cpufreq governor"
