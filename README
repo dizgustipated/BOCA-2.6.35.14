@@ -1,35 +1,30 @@
 kernel features include:
 
-" SIO, VR, INTERACTIVEX, SAVEDZEN, GREASEDLIGHTNING, DARKSIDE, ONDEMANDX, SCARY, SMARTASSV2, SUPERBAD"
-Ported to AOSP/CyanogenMod SGT7 originally by me.
 
-
-deconfigs made for P1000 & P1000L & P1000N included
+deconfigs made for P1000 & P1000L & P1000N CDMA included
 
 *TINY_SHMEM FILE SYSTEM enabled 
-*LCD Voltage down to 260000 from 300000 
-*Touchscreen Driver Tweaks 
-*10 point touch
-*OC/UV 600mhz, 1.2 & 1.4ghz added
-kernel features include:
-
-" SIO, VR, INTERACTIVEX, SAVEDZEN, GREASEDLIGHTNING, DARKSIDE, ONDEMANDX, SCARY, SMARTASSV2, SUPERBAD"
-Ported to AOSP/CyanogenMod SGT7 originally by me.
-
-
-deconfigs made for P1000 & P1000L & P1000N included
-
-*TINY_SHMEM FILE SYSTEM enabled 
-*LCD Voltage down to 260000 from 300000 
+*LCD Voltage down to 255000 from 300000 
 *Touchscreen Driver Tweaks 
 *10 point touch
 *OC/UV 600mhz, 1.2 & 1.4ghz added
 *Set at 1000mhz stock 
 *voodoo sound v10 
 *patched up to 2.6.35.13 (from 2.6.35.7) 
-*Minimal Undervolt Settings 
-*new recovery (Based off of Overcome Recovery - adapted by Humbertos
+*Minimal Undervolt Settings
 *large market downloads 
+*AutoGroup Shed 
+*CONFIG_NETFILTER_XT_TARGET_LED 
+*video record has returned once again. - thanks jt1134
+*better memory killer
+*very flexable undervolting
+*lower tab temperature
+*"trickle charge" (VERY SLOWELY) in car
+*Add NTFS support
+*Battery Life eXtender (BLX)
+(http://forum.xda-developers.com/showthread.php?t=1257497)
+*updated wifi scan
+*kernel profiling and sha digest
 
 CPU Govenors
 --------------------
@@ -50,11 +45,12 @@ scary
 lagfree
 darkside
 interactive
-<<<<<<< HEAD
+Lionheart
+Wheatly
+Intellidemand
 LULZACTIVE - ported from:http://forum.xda-developers.com/show....php?t=1460327 - thanks af974!
 (use recomended (lulzactive located here:https://market.android.com/details?id=com.tegrak.lulzactive)
-=======
->>>>>>> 7a6cece22c17690e2fafc3bed8b0bbb7bb53c7ba
+
 
 I/O Schedulers
 
@@ -67,29 +63,17 @@ I/O Schedulers
 *SIO I/O Scheduler
 *BFQ-v2 I/O Scheduler
 
-NEW Features
----------------------
+" SIO, VR, INTERACTIVEX, SAVEDZEN, GREASEDLIGHTNING, DARKSIDE, ONDEMANDX, SCARY, SMARTASSV2, SUPERBAD, Lionheart, Wheatly & Intellidemand"
+Ported to AOSP/CyanogenMod SGT7 originally by me.
 
-*AutoGroup Shed 
-*CONFIG_NETFILTER_XT_TARGET_LED 
-*video record has returned once again. - thanks jt1134
-*better memory killer
-*very flexable undervolting
-*lower tab temperature
-*"trickle charge" (VERY SLOWELY) in car
-*Add NTFS support
-*Battery Life eXtender (BLX)
-(http://forum.xda-developers.com/showthread.php?t=1257497)
-*updated wifi scan
-*kernel profiling and sha digest
 
-<<<<<<< HEAD
 --------------------------------------------
 ============================================
 --------------------------------------------
-=======
----------------------------------------------------------------------------------------
->>>>>>> 7a6cece22c17690e2fafc3bed8b0bbb7bb53c7ba
+============================================
+--------------------------------------------
+
+
 
 Linux kernel release 2.6.xx <http://kernel.org/>
 
