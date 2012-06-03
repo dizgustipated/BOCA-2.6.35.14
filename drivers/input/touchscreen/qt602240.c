@@ -49,7 +49,7 @@ static bool gbfilter =false;
 static bool buttons_enabled = true;
 
 static bool leds_on = true;
-static int leds_timeout = 1600;
+static int leds_timeout = 4600;
 static struct timer_list leds_timer;
 static void leds_timer_callback(unsigned long data);
 
